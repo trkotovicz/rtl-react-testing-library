@@ -78,5 +78,9 @@ describe('5. Teste o componente <Pokedex.js />', () => {
     expect(screen.getByText(/charmander/i)).toBeInTheDocument();
     userEvent.click(button);
     expect(screen.getByText(/caterpie/i)).toBeInTheDocument();
+
+    // Ao clicar em All volta a aparecer todos os pokémons.
+    userEvent.click(allButton);
+    expect(screen.getByText(/pikachu/i)).toBeInTheDocument();
   });
 });
