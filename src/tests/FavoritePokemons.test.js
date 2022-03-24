@@ -8,8 +8,8 @@ import renderWithRouter from '../helpers/renderWithRouter';
 describe('3. Teste o componente <FavoritePokemons.js />', () => {
   it('Deve aparecer a mensagem No favorite pokemon found, se não tiver favoritos', () => {
     render(<FavoritePokemons />);
-    const noFavorite = screen.getByText(/no favorite pokemon found/i);
 
+    const noFavorite = screen.getByText(/no favorite pokemon found/i);
     expect(noFavorite).toBeInTheDocument();
   });
 
